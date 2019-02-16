@@ -11,7 +11,9 @@
     </div>
     <div class="collapse navbar-collapse" id="navbar-top">
       <ul class="nav navbar-nav navbar-right">
+          <li>  <a href="/home/front">Actualité</a></li>
         <% if user_signed_in? %>
+        <li><a href="/">Mon Profile</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.name %> <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -22,10 +24,13 @@
             </ul>
           </li>
         <% else %>
+      
           <li><%= link_to 'About', about_path %></li>
           <li><%= link_to 'Sign up', new_user_registration_path %></li>
           <li><%= link_to 'Sign in', user_session_path %></li>
+         
         <% end %>
+  
       </ul>
     </div>
   </div>

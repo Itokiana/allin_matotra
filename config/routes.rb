@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+
+  get "/home/front"
   resources :posts
   resources :comments, only: [:create, :destroy]
   devise_for :users

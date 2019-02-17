@@ -61,8 +61,8 @@ This will create records with values from faker & populator gems. Also here are 
 
 ### Screenshots
 ![index](https://image.noelshack.com/fichiers/2019/07/7/1550418387-acceuil-allin.png)
-![home](https://image.noelshack.com/fichiers/2019/07/7/1550418387-acceuil-allin.png)
-![profile](https://image.noelshack.com/fichiers/2019/07/7/1550418387-acceuil-allin.png)
+![home](https://image.noelshack.com/fichiers/2019/07/7/1550418469-post.png)
+![profile](https://image.noelshack.com/fichiers/2019/07/7/1550418482-conenxion.png)
 
 
 ### Pull Requests

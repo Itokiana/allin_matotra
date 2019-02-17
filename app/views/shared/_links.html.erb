@@ -1,19 +1,19 @@
 <div id="links" class="well">
   <h5>
     <%= fa_icon 'newspaper-o' %>
-    <%= link_to 'NewsFeed', root_path %>
+    <%= link_to 'Actualité', root_path %>
   </h5>
   <h5>
-    <%= fa_icon 'calendar-o' %>
-    <%= link_to 'Create Event', new_event_path %>
+    <%= fa_icon 'calendar-week' %>
+    <%= link_to 'Crée Evenement', new_event_path %>
   </h5>
   <h5>
-    <%= fa_icon 'calendar-o' %>
-    <%= link_to 'Events Calendar', calendar_events_path %>
+    <%= fa_icon 'calendar-check' %>
+    <%= link_to 'Calendrier Evenement', calendar_events_path %>
   </h5>
   <h5>
-    <%= fa_icon 'arrow-circle-right' %>
-    <%= link_to 'Friends', friends_user_path(current_user) %>
+    <%= fa_icon 'user-friends' %>
+    <%= link_to 'Collègue', friends_user_path(current_user) %>
   </h5>
   <h5>
     <%= fa_icon 'arrow-circle-left' %>
@@ -21,14 +21,14 @@
   </h5>
   <h5>
     <%= fa_icon 'search' %>
-    <%= link_to('Find Friends', find_friends_path)%>
+    <%= link_to('Trouver Collègue', find_friends_path)%>
   </h5>
   <h5>
-    <%= fa_icon 'pencil' %>
-    <%= link_to 'Edit Profile', edit_user_path(current_user) %>
+    <%= fa_icon 'pencil-alt' %>
+    <%= link_to 'Modifier Profile', edit_user_path(current_user) %>
   </h5>
   <h5>
     <%= fa_icon 'lock' %>
-    <%= link_to 'Change password', edit_user_registration_path %>
+    <%= link_to 'Modifier Mot de Passe', edit_user_registration_path %>
   </h5>
 </div>

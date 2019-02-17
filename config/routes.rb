@@ -2,6 +2,9 @@ Rails.application.routes.draw do
 
 
   get "/home/front"
+  get "/home/gallery"
+  get "/home/welcome"
+  get "/home/about"
   resources :posts
   resources :comments, only: [:create, :destroy]
   devise_for :users
@@ -24,7 +27,7 @@ Rails.application.routes.draw do
     root to: 'home#index', as: 'home'
   end
   unauthenticated :user do
-    root 'home#front'
+    root 'home#welcome'
   end
 
   match :follow, to: 'follows#create', as: :follow, via: :post

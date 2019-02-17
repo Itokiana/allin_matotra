@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
 
+  get 'admin_post/dashboard'
+  get 'admin_post/confirm_post'
+  get 'admin/login', to: 'admin#login', as: 'login_admin'
+  get 'admin/logout', to: 'admin#logout', as: 'logout_admin'
+  post 'admin/auth', to: 'admin#auth', as: 'auth'
+  get 'admin/dashboard', to: 'admin#dashboard', as: 'dashboard'
+  get 'admin/post/:id/confirm', to: 'admin_post#confirm_post', as: 'confirm_post'
   resources :posts
   resources :comments, only: [:create, :destroy]
   devise_for :users

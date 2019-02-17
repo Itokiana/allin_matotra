@@ -1,4 +1,4 @@
-<% if post.user %>
+<% if (post.user && post.confirmed == 1) %>
   <div class="info">
     <%= render 'shared/avatar', user: post.user %>
     <h4 class="name"><%= link_to post.user.name, user_path(post.user) %></h4>

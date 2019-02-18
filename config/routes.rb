@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+<<<<<<< HEAD
   get 'admin_post/dashboard'
   get 'admin_post/confirm_post'
   get 'admin/login', to: 'admin#login', as: 'login_admin'
@@ -7,6 +8,14 @@ Rails.application.routes.draw do
   post 'admin/auth', to: 'admin#auth', as: 'auth'
   get 'admin/dashboard', to: 'admin#dashboard', as: 'dashboard'
   get 'admin/post/:id/confirm', to: 'admin_post#confirm_post', as: 'confirm_post'
+=======
+
+  get "/home/front"
+  get "/home/gallery"
+  get "/home/welcome"
+  get "/home/about"
+  get "/home/archive"
+>>>>>>> 0dc5ea8dc94e2ad0c097a4c9f44721a006dd9c53
   resources :posts
   resources :comments, only: [:create, :destroy]
   devise_for :users
@@ -29,7 +38,7 @@ Rails.application.routes.draw do
     root to: 'home#index', as: 'home'
   end
   unauthenticated :user do
-    root 'home#front'
+    root 'home#welcome'
   end
 
   match :follow, to: 'follows#create', as: :follow, via: :post

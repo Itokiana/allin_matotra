@@ -2,7 +2,7 @@
   <div class="info">
     <%= render 'shared/avatar', user: event.user %>
     <h4 class="name"><%= link_to event.user.name, user_path(event.user) %></h4>
-    <span class="action">created an <%= link_to 'event', event %></span>
+    <span class="action">a crée un <%= link_to 'event', event %> intitulé : </span>
   </div>
   <div class="content">
     <h3><%= event.name %></h3>
@@ -16,7 +16,7 @@
       <div class="pull-right">
         <% if belongs_to_user?(event) %>
           <%= link_to edit_event_path(event), class: 'btn btn-primary btn-sm' do %>
-            <% fa_icon 'pencil' %>
+            <% fa_icon 'pencil-alt' %>
           <% end %>
           <%= link_to event_path(event), method: :delete, class:'btn btn-danger btn-sm', remote: remote do %>
             <% fa_icon 'trash' %>

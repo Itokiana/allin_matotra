@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get "/home/gallery"
   get "/home/welcome"
   get "/home/about"
+  get "/home/archive"
   resources :posts
   resources :comments, only: [:create, :destroy]
   devise_for :users
